@@ -1,0 +1,38 @@
+name: asl_internship_mobile_week4
+description: "ASL Internship - Mobile App Development Track - Week 4: Device Features (Camera, Location, Push Notifications) - Supabase backend"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.6
+
+  # Backend (Week 3 carry-over, now Supabase instead of Firebase)
+  supabase_flutter: ^2.5.6
+
+  # Week 4 additions
+  image_picker: ^1.1.2
+  geolocator: ^12.0.0
+  geocoding: ^3.0.0
+  permission_handler: ^11.3.1
+
+  # Push notifications: Supabase has no built-in push service, so this
+  # project pairs it with OneSignal (free tier, no Firebase project needed).
+  # See README "Push Notifications" section for the reasoning.
+  onesignal_flutter: ^5.1.2
+
+  intl: ^0.19.0
+  uuid: ^4.4.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
