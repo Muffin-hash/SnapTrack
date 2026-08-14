@@ -1,0 +1,15 @@
+<!--
+  Add these keys inside the <dict> in ios/Runner/Info.plist.
+  iOS refuses to show the permission prompt at all if the usage
+  description string is missing — this is the #1 cause of a silent
+  camera/location failure on iOS, so don't skip it.
+-->
+
+<key>NSCameraUsageDescription</key>
+<string>This app uses the camera so you can attach a photo to your post.</string>
+
+<key>NSPhotoLibraryUsageDescription</key>
+<string>This app accesses your photo library so you can attach an existing photo to your post.</string>
+
+<key>NSLocationWhenInUseUsageDescription</key>
+<string>This app uses your location to tag posts with where they were created.</string>
